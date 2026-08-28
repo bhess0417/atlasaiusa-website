@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtlasAIUSA | Intelligent Business Systems</title>
+   <style>
+     :root {
+       --navy: #081325;
+       --deep-blue: #0E1E3C;
+       --blue: #1677FF;
+       --light-blue: #60B5FF;
+       --white: #FFFFFF;
+       --gray: #A7B3C3;
+       }
+     * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       }
+     body {
+       font-family: Arial, Helvetica, sans-serif;
+       background: var(--navy);
+       color: var(--white);
+       line-height: 1.6;
+       }
+     header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 24px 7%;
+       border-bottom: 1px solid rgba(255,255,255,.08);
+       }
+     .brand {
+       font-size: 20px;
+       font-weight: 800;
+       letter-spacing: 1px;
+       }
+     .brand span {
+       color: var(--blue);
+       }
 
+nav a {
+  color: var(--gray);
+  text-decoration: none;
+  margin-left: 28px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--white);
+}
+
+.hero {
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 7%;
+  background:
+    radial-gradient(circle at 75% 40%, rgba(22,119,255,.18), transparent 30%),
+    linear-gradient(135deg, var(--navy), var(--deep-blue));
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.eyebrow {
+  color: var(--light-blue);
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: clamp(52px, 8vw, 96px);
+  line-height: .95;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  color: var(--gray);
+  font-size: 20px;
+  max-width: 760px;
+}
+     .products {
+  padding: 90px 7%;
+  background: #0A1729;
+}
+
+.section-label {
+  color: var(--light-blue);
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.products h2 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.section-intro {
+  color: var(--gray);
+  max-width: 720px;
+  margin-bottom: 45px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  padding: 36px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  border-radius: 12px;
+}
+
+.product-card h3 {
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.product-card p {
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.product-link {
+  color: var(--light-blue);
+  text-decoration: none;
+  font-weight: 700;
+}        
+     .about {
+  padding: 90px 7%;
+  background: var(--navy);
+}
+
+.about-inner {
+  max-width: 900px;
+}
+
+.about h2 {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.about p {
+  color: var(--gray);
+  font-size: 18px;
+  max-width: 760px;
+}
+
+footer {
+  padding: 32px 7%;
+  border-top: 1px solid rgba(255,255,255,.08);
+  color: var(--gray);
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+}
+
+</style>
+</head>
+  <body>
+
+<header>
+  <div class="brand">ATLAS<span>AI</span>USA</div>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#about">Company</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">INTELLIGENT BUSINESS SYSTEMS</div>
+      <h1>Intelligence built for better decisions.</h1>
+      <p>
+        AtlasAIUSA builds AI-powered systems that transform complex business data
+        into clear intelligence, actionable insight, and confident decisions.
+      </p>
+    </div>
+  </section>
+    <section class="products" id="products">
+    <div class="section-label">ATLASAIUSA PRODUCTS</div>
+    <h2>Two intelligence systems. One mission.</h2>
+    <p class="section-intro">
+      AtlasAIUSA develops focused AI platforms that help business leaders understand
+      what is happening, why it is happening, and what to do next.
+    </p>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>SmartLedger</h3>
+        <p>
+          Executive intelligence for the money moving through your business.
+          SmartLedger identifies savings opportunities, financial risks, and
+          actionable insights from everyday business data.
+        </p>
+        <a class="product-link" href="https://atlasaiusa.com">Explore SmartLedger →</a>
+      </div>
+
+      <div class="product-card">
+        <h3>Arclight</h3>
+        <p>
+          Always-on revenue intelligence that monitors the systems behind your
+          revenue picture, detects discrepancies, and traces them to the
+          underlying evidence.
+        </p>
+        <a class="product-link" href="https://arclight.atlasaiusa.com">Explore Arclight →</a>
+      </div>
+    </div>
+  </section>
+    <section class="about" id="about">
+    <div class="about-inner">
+      <div class="section-label">ABOUT ATLASAIUSA</div>
+      <h2>AI that turns business complexity into clarity.</h2>
+      <p>
+        AtlasAIUSA builds intelligent systems for business leaders who need more
+        than dashboards. Our products continuously analyze operational and
+        financial signals to surface what matters, explain why it matters,
+        and help leaders decide what comes next.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 AtlasAIUSA · Intelligent Business Systems
+</footer>
+
+</body>
+</html>
+
+       
+       
