@@ -147,7 +147,48 @@ h1 {
   color: var(--light-blue);
   text-decoration: none;
   font-weight: 700;
-}        
+}
+
+    .how-it-works {
+  padding: 90px 7%;
+  background: #0a1729;
+}
+
+.how-it-works h2 {
+  font-size: 42px;
+  margin-bottom: 36px;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.how-step {
+  padding: 28px;
+  border: 1px solid rgba(96, 181, 255, 0.16);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.how-step span {
+  display: block;
+  color: var(--light-blue);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.how-step h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.how-step p {
+  color: var(--gray);
+  line-height: 1.7;
+} 
      .about {
   padding: 90px 7%;
   background: var(--navy);
@@ -249,6 +290,31 @@ footer {
       </div>
     </div>
   </section>
+
+  <section class="how-it-works">
+  <div class="section-label">HOW ATLASAIUSA WORKS</div>
+  <h2>From business signals to confident action.</h2>
+
+  <div class="how-grid">
+    <div class="how-step">
+      <span>01</span>
+      <h3>CONNECT</h3>
+      <p>Bring together the financial, operational, and revenue signals that matter.</p>
+    </div>
+
+    <div class="how-step">
+      <span>02</span>
+      <h3>ANALYZE</h3>
+      <p>AI continuously identifies patterns, risks, discrepancies, and opportunities.</p>
+    </div>
+
+    <div class="how-step">
+      <span>03</span>
+      <h3>ACT</h3>
+      <p>Turn intelligence into clear explanations, evidence, and recommended next steps.</p>
+    </div>
+  </div>
+</section>
     <section class="about" id="about">
     <div class="about-inner">
       <div class="section-label">ABOUT ATLASAIUSA</div>
